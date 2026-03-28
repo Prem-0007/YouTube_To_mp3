@@ -2,6 +2,7 @@ const express = require("express");
 const { exec } = require("child_process");
 const fs = require("fs");
 const path = require("path");
+const PORT = process.env.PORT || 3000;
 
 const app = express();
 
@@ -167,9 +168,9 @@ Click here to download MP3
 
 });
 
-app.listen(3000,()=>{
 
-console.log("Server running");
-console.log("http://127.0.0.1:3000");
 
+app.listen(PORT,()=>{
+    console.log("Server running on port " + PORT);
 });
+
