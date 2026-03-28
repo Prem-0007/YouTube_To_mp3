@@ -143,11 +143,10 @@ console.log(stdout);
 console.log(stderr);
 
 if(error){
-
-return res.send("Download failed try again");
-
+    console.log("ERROR:", error);
+    console.log("STDERR:", stderr);
+    return res.send("Error: " + stderr);
 }
-
 res.send(`
 
 <h2>Download Complete </h2>
