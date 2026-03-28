@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-"start": "node ytmp3.js"
+"start": "node ytmp3.js",
 
     "test": "echo \"Error: no test specified\" && exit 1"
   },
